@@ -1,0 +1,5 @@
+.git
+htdocs/
+install.php
+.dockerignore
+*.log

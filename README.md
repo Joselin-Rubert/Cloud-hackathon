@@ -23,6 +23,17 @@ A complete PHP 8 + MySQL web application for students: tasks, focus timer, study
    - `SF_DB_HOST`, `SF_DB_NAME`, `SF_DB_USER`, `SF_DB_PASS`
 5. **Open the app** — <http://localhost/studentflow/>
 
+## Cloud deploy (one click)
+
+The repo ships with a `Dockerfile` (Apache + PHP + MariaDB auto-bootstrapped in a
+single container) and a Render Blueprint:
+
+1. Push this repo to GitHub (done).
+2. Create a free account at <https://render.com> (sign in with GitHub).
+3. **New + → Blueprint → Cloud-hackathon → Apply**. The app deploys with its
+   database included; no external MySQL needed.
+4. Open the generated URL and log in with the demo account below.
+
 ## Demo account
 
 Import `database/demo_data.sql`, then log in with:
