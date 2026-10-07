@@ -32,8 +32,8 @@ done
 if ! mysql --user=root -e 'USE `studentflow`' >/dev/null 2>&1; then
     echo "[StudentFlow] importing schema"
     mysql --user=root < /var/www/html/database/studentflow.sql
-    mysql --user=root < /var/www/html/database/github_migration.sql
-    mysql --user=root < /var/www/html/database/features_migration.sql
+    mysql --user=root studentflow < /var/www/html/database/github_migration.sql
+    mysql --user=root studentflow < /var/www/html/database/features_migration.sql
     if [ -f /var/www/html/database/demo_data.sql ]; then
         mysql --user=root < /var/www/html/database/demo_data.sql
     fi
